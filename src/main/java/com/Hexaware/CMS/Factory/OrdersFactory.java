@@ -45,4 +45,10 @@ public class OrdersFactory
 
 
     }
+
+    public static String Accept_reject_order(int ord_id,int cus_id,int ven_id, String Status) throws Exception
+    {
+            return  OrdersDb.accept_reject_order(ord_id,cus_id,ven_id,Status);
+
+    }
 }

@@ -45,7 +45,8 @@ public class CliMain {
         System.out.println("10.Search Wallet");
         System.out.println("11.Show Orders");
         System.out.println("12.Search orders");
-        System.out.println("13.exit");
+        System.out.println("13.Accept or Reject Order");
+        System.out.println("14.exit");
         choice=sc.nextInt();
         switch(choice){
             case 1:
@@ -224,14 +225,24 @@ public class CliMain {
                         case 5:  break;           
                     }
                 }while(ch1!=5);
-                break;            
+                break;
 
-            case 13: Runtime.getRuntime().halt(0);
+
+            case 13: 
+                        try{
+                        Accept_Reject_Order();
+                        }
+                        catch(Exception e)
+                        {
+                            e.printStackTrace();
+                        }
+                        break;
+            case 14: Runtime.getRuntime().halt(0);
                 
             default:
                 System.out.println("Invalid Options......");
         }
-        }while(choice!=13); 
+        }while(choice!=14); 
     }
     /**
      * this method  is to place food order.
@@ -574,6 +585,22 @@ public class CliMain {
        {
            System.out.println(o);
        }
+    }
+
+    public static void Accept_Reject_Order() throws Exception
+    {
+        System.out.println("Enter ord_id");
+        int ord_id=sc.nextInt();
+        System.out.println("Enter Customer id");
+        int cus_id=sc.nextInt();
+        System.out.println("Enter Vendor id");
+
+        int ven_id=sc.nextInt();
+        System.out.println("Enter Status");
+        String Status=sc.next();
+      String Status1=OrdersFactory.Accept_reject_order(ord_id,ven_id,cus_id,Status);
+      System.out.println(Status1);
+
     }
 }  
 

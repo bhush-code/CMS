@@ -35,7 +35,7 @@ public class OrderFactory {
             wal_amount=wal_amount-bill;
             order.Set_bill_amount(bill);
             PlaceOrder.insertDb(order);
-            WalletFactory.Update_Wallet(cus_id,wal_amount);
+            //WalletFactory.Update_Wallet(cus_id,wal_amount);
              
         }
         else

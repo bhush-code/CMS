@@ -10,6 +10,7 @@ com\Hexaware\CMS\Factory\VendorFactory.class
 com\Hexaware\CMS\Model\Customer.class
 com\Hexaware\CMS\Persistence\CustomerDb.class
 com\Hexaware\CMS\Model\OrdStatus.class
+com\Hexaware\CMS\Persistence\SendEmailTLS.class
 com\Hexaware\CMS\Factory\CustomerFactory.class
 com\Hexaware\CMS\Persistence\ConnectionHelper.class
 com\Hexaware\CMS\Cli\CliMain.class
@@ -18,4 +19,5 @@ com\Hexaware\CMS\Persistence\VendorDb.class
 com\Hexaware\CMS\Factory\WalletFactory.class
 com\Hexaware\CMS\Model\Orders.class
 com\Hexaware\CMS\Model\WalSource.class
+com\Hexaware\CMS\Persistence\SendEmailTLS$1.class
 com\Hexaware\CMS\Factory\MenuFactory.class
